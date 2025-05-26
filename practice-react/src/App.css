@@ -1,0 +1,558 @@
+@import "tailwindcss";
+
+#root {
+  max-width: 1280px;
+  /* margin: 0 auto; */
+  --color_dark: #331E36;
+  text-align: center;
+}
+
+.choose_options {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+  align-items: center;
+
+  width: 200px;
+  margin-top: 10px;
+
+}
+.my_options{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 800px;
+  width: 300px;
+  border-right: 1px solid #1743d2;
+  margin-top: 20px;
+  padding-left: 50px;
+  position: fixed;
+  
+}
+.body_ {
+  background-color: #fefefe;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 500%;
+  
+}
+
+
+.button {
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  color: rgb(18, 0, 0);
+  border: none;
+  border-bottom: 1px solid #0b0303;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  height: 30px;
+  width: 100px;
+  
+}
+
+.infocss{
+  margin-left: 400px;
+  margin-top: 20px;
+  
+  
+}
+
+
+
+.add_button{
+  gap: 20px;
+  display: flex;
+  padding-top: 75px;
+  display: flex;
+  align-items: center;
+}
+
+
+/* Removed duplicate .download_button definition to prevent style conflicts */
+
+
+
+button:hover {
+  
+  background-color: transparent;
+  font-size: large;
+  color: #1743d2;
+  cursor: pointer;
+
+}
+
+.download_button1, .download_button2{
+  background-color: #1743d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 10 px 20px 0px;
+  
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  width: 150px;
+  height: 40px;
+}
+
+.social_media{
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.face, .insta,.linked{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #8ea0dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.face:hover, .insta:hover, .linked:hover{
+  background-color: #0f2ca5;
+  color: #fff;
+  transform: scale(1.03);
+  font-size: 15px;
+  cursor: pointer;
+  
+}
+
+.face:active, .insta:active, .linked:active {
+  transform: scale(0.97) !important;
+  outline: none;
+}
+
+
+
+
+/* After click (active) effect */
+.download_button1:active,
+.download_button2:active {
+  transform: scale(0.97) !important;
+  
+}
+
+.download_button1:hover,.download_button2:hover {
+  background-color: #1743d2;
+  transform: scale(1.05);
+  font-size: 15px;
+  cursor: pointer;
+  
+}
+
+.my_picture {
+  flex-shrink: 0;
+}
+
+.name{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.my_picture{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: beige;
+  background-image: url('./assets/picture.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: transparent;
+}
+
+
+/* .my_info{
+  height: 400px;
+  width: 1150px;
+  background-color: #F3F9FF;
+  border-radius: 20px;
+  display: flex;
+  
+} */
+
+.my_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f9ff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+
+p{
+  font-size: 15px;
+  
+}
+
+.my_info:hover {
+  box-shadow: 0 8px 24px rgba(23, 67, 210, 0.15), 0 1.5px 8px rgba(51, 30, 54, 0.08);
+  transform: translateY(-4px) scale(1.02);
+  background: linear-gradient(90deg, #f3f9ff 80%, #e3eaff 100%);
+  transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+  border: 1.5px solid #1743d2;
+}
+
+.my_info:hover .name,
+.my_info:hover .role {
+  color: #0f2ca5;
+  text-shadow: 0 2px 8px #e3eaff;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+/* .mydetails {
+  
+  display: flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:baseline;
+  gap: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+} */
+
+.my_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  max-width: 600px;
+}
+
+.full{
+  color: #1743d2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+b {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1743d2;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 0;
+  color: #1a202c;
+}
+
+.add_pic{
+  display: flex;
+  gap: 500px;
+  
+}
+
+.my_datails{
+  display: flex;
+  flex-direction: column;
+}
+
+/* b{
+  font-size: 15px;
+  font-weight: 800;
+} */
+
+.role {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1743d2;
+  margin-top: -10px;
+}
+
+.amr_name{
+  width: 500px;
+  font-size: 13px;
+  padding-top: 40px;
+  justify-content:flex-start;
+  align-items:baseline;
+}
+
+
+
+/* img{
+  height: 400px;
+  width: 400px;
+  background-color: brown;
+  padding-right: 0px;
+  border-radius: 15px;
+  border: transparent;
+
+
+} */
+
+.my_picture_{
+  height: 350px;
+  width: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+  background-image: url('./assets/picture.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about_me{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.second_phase{
+  padding-top: 50px;
+  display: flex;
+  gap: 110px;
+  
+}
+
+
+.box1,.box2,.box3{
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.box1{
+  background-color: #E5F8F4;
+}
+
+.box2{
+  background-color: #FDF1E5;
+}
+
+.box3{
+  background-color: #E5F1FD;
+}
+
+.box1:hover, .box2:hover, .box3:hover{
+  box-shadow: 0 4px 12px rgba(23, 67, 210, 0.15), 0 1.5px 8px rgba(51, 30, 54, 0.08);
+  transform: translateY(-4px) scale(1.02);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+
+.month{
+  font-size: 20px;
+  font-weight: 600;
+  
+}
+
+.exp{
+  opacity: 0.8;
+  color: #1a202c;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.my_skills{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+
+}
+
+.skill_img{
+  background-image: url('./assets/skill.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+  height: 300px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Card Flip Animation */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 370px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.4,0,0.2,1);
+  transform-style: preserve-3d;
+}
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.my_cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 40px;
+  row-gap: 32px;
+  column-gap: 32px;
+  padding: 0 16px;
+}
+
+
+
+
+
+
+
+
+.contact-section {
+  background-color: #f1f8ff;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-subtitle {
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.contact-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1a1640;
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact-info {
+  background-color: #150b4f;
+  color: white;
+  padding: 30px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-info p {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.contact-form {
+  flex: 2;
+  padding: 30px;
+  min-width: 300px;
+  background-color: #f1f8ff;
+}
+
+.contact-form label {
+  display: block;
+  margin: 15px 0 5px;
+  color: #1a1640;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #1a1640;
+  border-radius: 5px;
+  resize: none;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  background-color: #150b4f;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+#projects{
+  margin-bottom: 50px;
+  
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} 
