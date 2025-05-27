@@ -1,3 +1,9 @@
+
+
+
+
+
+
 import Options from'./components/options'
 import Info from'./components/myInfo'
 import PersonalInfo from'./components/personalInfo'
