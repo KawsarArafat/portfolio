@@ -26,9 +26,9 @@ const personalInfo = () => {
 
         <div className="second_phase">
 
-          <div className="box1"> <p><span className='month'>1 Month </span><br/> <b className='exp'>Experinence</b></p></div>
+          <div className="box1"> <p><span className='month'>1 Month </span><br/> <b className='exp'>Experience</b></p></div>
           <div className="box2"> <p><span className='month'>5 Plus </span><br/> <b className='exp'>Projects</b></p></div>
-          <div className="box3"> <p><span className='month'>1 Month </span><br/> <b className='exp'>Experinence</b></p></div>
+          <div className="box3"> <p><span className='month'>1 Month </span><br/> <b className='exp'>Experience</b></p></div>
 
         </div>
         
